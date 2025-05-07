@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Data Kas</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f5f8;
+      color: #333;
+      text-align: center;
+      background-image: url('https://via.placeholder.com/1600x900'); /* Gambar latar belakang */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Header */
+    h1 {
+      color: black;
+      font-size: 3rem;
+      margin-top: 80px;
+    }
+
+    p {
+      color: black;
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+
+    /* Button Styles */
+    .btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      margin: 20px;
+      cursor: pointer;
+      background-color: #5f27cd;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn:hover {
+      background-color: #341f97;
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Footer */
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .btn {
+        width: 80%;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Aplikasi Data Kas Masuk dan Keluar</h1>
+  <p>Pilih salah satu untuk melihat data lebih lanjut:</p>
+
+  <button class="btn" onclick="window.location.href='/api/transactions'">Data Kas Masuk dan Keluar</button>
+  <button class="btn" onclick="window.location.href='/api/transactions/summary'">Total Kas</button>
+
+  <footer>
+    <p>&copy; Riswan. 2025. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
